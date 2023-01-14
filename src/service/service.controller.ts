@@ -4,8 +4,9 @@ import { ServiceService } from './service.service';
 import { createServiceDto, editServiceDto } from './dto';
 // import crypto from 'crypto';
 import { Technical } from '../entities/technical.entity';
+import { ApiTags } from '@nestjs/swagger/dist';
 
-
+@ApiTags('Services')
 @Controller('service')
 export class ServiceController {
     constructor(private readonly serviceServices: ServiceService) { }

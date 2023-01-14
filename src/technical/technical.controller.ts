@@ -2,10 +2,9 @@ import { Controller, Get, Put, Delete, Param, Body, Post } from '@nestjs/common'
 import { TechnicalService } from './technical.service';
 import { ParseIntPipe } from '@nestjs/common/pipes';
 import { createTechnicaltDto, editTechnicaltDto } from './dto';
+import { ApiTags } from '@nestjs/swagger/dist';
 
-
-
-
+@ApiTags('Technicals')
 @Controller('technical')
 export class TechnicalController {
 
