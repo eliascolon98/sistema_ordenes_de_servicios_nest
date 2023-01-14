@@ -29,14 +29,30 @@
 ## Installation
 
 ```bash
-$ npm install
+$ npm install --force
 ```
+
+#creación del archivo .env basado en el archivo .env.example
+$cp .env.example .env
+
+#------------------------------ NOTA ------------------------
+#si no tiene una base de datos, puede crear una docker-compose.yml 
+#archivo basado en el docker-compose.yml.example
+
+#Si se ejecuta directamente desde docker el backend el host de base de dato
+#en el archivo .env debe ir:
+#DB_HOST=postgresqlSolicitudes,
+#si se encuentra en fuera de docker
+#DB_HOST=localhost
 
 ## Running the app
 
 ```bash
 # development
+#local
 $ npm run start
+#Desde Docker
+$ docker-compose up
 
 # watch mode
 $ npm run start:dev
