@@ -26,11 +26,11 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+## Installation adn Configuration
 
 ```bash
 $ npm install --force
-```
+
 
 #creación del archivo .env basado en el archivo .env.example
 $cp .env.example .env
@@ -44,7 +44,7 @@ $cp .env.example .env
 #DB_HOST=postgresqlSolicitudes,
 #si se encuentra en fuera de docker
 #DB_HOST=localhost
-
+```
 ## Running the app
 
 ```bash
